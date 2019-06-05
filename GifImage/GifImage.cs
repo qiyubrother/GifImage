@@ -63,7 +63,7 @@ namespace GifImage
 
             if (image != null)
             {
-                //lock (image.Image)
+                lock (image.Image)
                 {
                     var owner = this;
                     Image newImg = image.Image;
